@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+header {
+    display: inline-block;
+    font-size: 1.3em;
+    width: 100%;
+    height: 5%;
+}
+
+/*Logo header*/
+header picture img{
+    width: 10%;
+    height: 100%;
+    margin: 1rem 1rem;
+}
+header .menu {
+    display: flex;
+    justify-content: flex-end;
+}
+header .nav-right-header{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3.5rem;
+    right: -80%;
+    list-style: none;
+    position: fixed;
+    width: 78%;
+    height: 2rem;
+    z-index: 100;
+    transition: .5s;
+    margin-top: -4rem;
+}
+header .menu img{
+    width: 20px;
+    height: 20px;
+}
+
+header .nav-right-header a{
+    color: #000;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+header .nav-right-header a:hover{
+    color: rgb(151, 11, 11);
+}
+header .menu label{
+    margin-top: -4.3rem;
+    margin-right: 1rem;
+} 
+header .menu #show-menu{
+    display: none;
+}
+header .menu #show-menu + label{
+    position: fixed;
+    line-height: 2;
+    color: #000;
+    cursor: pointer;
+    z-index: 150;
+}
+header .menu #show-menu:checked ~ .nav-right-header{
+    right: 0; 
+}
