@@ -6,16 +6,13 @@
 html{
     font-size: 62.5%;
 }
-
-
 header {
     display: inline-block;
+    position: relative;
     font-size: 1.3em;
     width: 100%;
     height: 5%;
 }
-
-/*Logo header*/
 header picture img{
     width: 10%;
     height: 100%;
@@ -31,7 +28,7 @@ header .nav-right-header{
     margin-right: 3.5rem;
     right: -80%;
     list-style: none;
-    position: fixed;
+    position: absolute;
     width: 78%;
     height: 2rem;
     z-index: 100;
@@ -68,3 +65,44 @@ header .menu #show-menu + label{
 header .menu #show-menu:checked ~ .nav-right-header{
     right: 0; 
 }
+
+main{
+    background-color: red;
+    width: 100%;
+    height: 100rem;
+}
+
+main .option-th-main{
+    background-color: #fff;
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+}
+
+main div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main div button{
+    width: 90%;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #64156e;
+}
+
+main .thirteen{
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+
+main .fourteen{
+    grid-column: 3/5;
+    grid-row: 4;
+} 
